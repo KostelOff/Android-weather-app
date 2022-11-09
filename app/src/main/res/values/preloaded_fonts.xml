@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/almendra_display</item>
+        <item>@font/beth_ellen</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/crushed</item>
+        <item>@font/wallpoet</item>
+        <item>@font/yatra_one</item>
+    </array>
+</resources>
