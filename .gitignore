@@ -49,3 +49,4 @@ captures/
 !gradle/wrapper/gradle-wrapper.jar
 
 weather_icon.svg
+weather.png

@@ -1,11 +1,9 @@
 package ru.kosteloff.weatherapp
 
-import android.content.Context
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import dagger.hilt.android.AndroidEntryPoint
 import ru.kosteloff.weatherapp.databinding.ActivityMainBinding
 import ru.kosteloff.weatherapp.viewmodel.WeatherViewModel
@@ -24,11 +22,7 @@ class MainActivity : AppCompatActivity() {
         weatherResp()
         binding.tvDayOfWeek.text = dayOfWeek()
         binding.date.text = date()
-
-
-
         otherDates()
-
     }
 
     private fun weatherResp() {
