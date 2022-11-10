@@ -9,8 +9,8 @@
     <color name="black_light">#80000000</color>
     <color name="white">#CCFFFFFF</color>
     <color name="grey">#707070</color>
-    <color name="blue">#002FD3</color>
-    <color name="red">#BA0000</color>
-    <color name="yellow">#FFD400</color>
-    <color name="purple">#AE01CC</color>
+    <color name="blue">#CC002FD3</color>
+    <color name="red">#CCBA0000</color>
+    <color name="yellow">#CCFFD400</color>
+    <color name="purple">#CCAE01CC</color>
 </resources>

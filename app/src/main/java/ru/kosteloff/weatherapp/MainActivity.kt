@@ -37,15 +37,18 @@ class MainActivity : AppCompatActivity() {
                     desc.contains("Rain")
                 ) {
                     binding.imageView.setImageResource(R.drawable.rain)
+                    binding.iconWeather.setImageResource(R.drawable.ic_baseline_rain_24)
                 } else if (desc.contains("Cloudy") ||
                     desc.contains("cloudy")
                 ) {
                     binding.imageView.setImageResource(R.drawable.cloudy)
+                    binding.iconWeather.setImageResource(R.drawable.ic_baseline_cloud_24)
                 } else if (
                     desc.contains("sunny") ||
                     desc.contains("Sunny")
                 ) {
                     binding.imageView.setImageResource(R.drawable.sunny)
+                    binding.iconWeather.setImageResource(R.drawable.ic_baseline_wb_sunny_24)
                 } else {
                     binding.imageView.setImageResource(R.drawable.gradient)
                 }

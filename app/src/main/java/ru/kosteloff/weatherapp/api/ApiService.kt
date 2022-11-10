@@ -5,6 +5,6 @@ import retrofit2.http.GET
 import ru.kosteloff.weatherapp.model.WeatherModel
 
 interface ApiService {
-    @GET("weather/Saint-Petersburg")
+    @GET("weather/Kazan")
     suspend fun getWeather(): Response<WeatherModel>
 }

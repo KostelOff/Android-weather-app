@@ -18,7 +18,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/black_light"
@@ -26,7 +26,7 @@
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@id/cardView_search">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                 android:fontFamily="@font/wallpoet"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Saint-Petersburg"
+                android:text="Kazan"
                 android:textColor="@color/white"
                 android:textSize="32sp" />
         </LinearLayout>
@@ -67,23 +67,32 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/icon_weather"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_baseline_rain_24"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_wind"
+                app:layout_constraintEnd_toEndOf="@id/ConstraintLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
             <TextView
                 android:id="@+id/tv_main_temp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="4dp"
-                android:gravity="center"
-                android:textStyle="bold"
                 android:fontFamily="@font/wallpoet"
+                android:gravity="center"
                 android:text="@string/loading"
                 android:textColor="@color/blue"
                 android:textSize="56sp"
-                app:layout_constraintStart_toStartOf="@id/ConstraintLayout2"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/ConstraintLayout2"
-                app:layout_constraintTop_toTopOf="@id/ConstraintLayout2"
-                 />
+                app:layout_constraintStart_toStartOf="@id/ConstraintLayout2"
+                app:layout_constraintTop_toTopOf="@id/ConstraintLayout2" />
 
             <TextView
                 android:id="@+id/tv_description"
@@ -91,23 +100,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="description"
                 android:fontFamily="@font/wallpoet"
+                android:text="description"
                 android:textColor="@color/red"
                 android:textSize="32sp"
-                app:layout_constraintTop_toBottomOf="@id/tv_main_temp"
                 app:layout_constraintStart_toStartOf="@id/ConstraintLayout2"
-                />
+                app:layout_constraintTop_toBottomOf="@id/tv_main_temp" />
 
             <TextView
                 android:id="@+id/tv_wind"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Speed wind"
-                android:textSize="24sp"
                 android:fontFamily="@font/wallpoet"
+                android:text="Speed wind"
                 android:textColor="@color/white"
+                android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="@+id/tv_description"
                 app:layout_constraintTop_toBottomOf="@+id/tv_description" />
 
@@ -129,13 +137,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="8dp"
+                android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/red"
                 android:textSize="36sp"
-                android:fontFamily="@font/wallpoet"
-                app:layout_constraintStart_toStartOf="@id/ConstraintLayout2"
                 app:layout_constraintBottom_toBottomOf="@id/ConstraintLayout2"
-                />
+                app:layout_constraintStart_toStartOf="@id/ConstraintLayout2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
@@ -163,10 +170,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/red"
-                android:textSize="28sp"
-                android:fontFamily="@font/wallpoet"
+                android:textSize="32sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_day_2_name" />
@@ -177,10 +184,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
                 android:layout_marginBottom="8dp"
+                android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/white"
-                android:textSize="16sp"
-                android:fontFamily="@font/wallpoet"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_day_3_name"
                 app:layout_constraintBottom_toTopOf="@id/tv_wind_day_3"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -193,7 +200,7 @@
                 android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_day_3_name"
                 app:layout_constraintEnd_toEndOf="@+id/tv_temperature_day_3"
                 app:layout_constraintTop_toBottomOf="@id/tv_temperature_day_3" />
@@ -203,10 +210,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/red"
-                android:textSize="28sp"
-                android:fontFamily="@font/wallpoet"
+                android:textSize="32sp"
                 app:layout_constraintBottom_toTopOf="@id/tv_day_2_name"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -217,10 +224,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
                 android:layout_marginBottom="8dp"
+                android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/white"
-                android:textSize="16sp"
-                android:fontFamily="@font/wallpoet"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_day_1_name"
                 app:layout_constraintBottom_toTopOf="@id/tv_wind_day_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -233,7 +240,7 @@
                 android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_day_1_name"
                 app:layout_constraintEnd_toEndOf="@+id/tv_temperature_day_1"
                 app:layout_constraintTop_toBottomOf="@id/tv_temperature_day_1" />
@@ -246,7 +253,7 @@
                 android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/red"
-                android:textSize="28sp"
+                android:textSize="32sp"
                 app:layout_constraintBottom_toTopOf="@id/tv_day_3_name"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_day_1_name" />
@@ -257,10 +264,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
                 android:layout_marginBottom="8dp"
-                android:text="@string/loading"
                 android:fontFamily="@font/wallpoet"
+                android:text="@string/loading"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_day_2_name"
                 app:layout_constraintBottom_toTopOf="@id/tv_wind_day_2"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -270,10 +277,10 @@
                 android:id="@+id/tv_wind_day_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/loading"
                 android:fontFamily="@font/wallpoet"
+                android:text="@string/loading"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_day_2_name"
                 app:layout_constraintEnd_toEndOf="@+id/tv_temperature_day_2"
                 app:layout_constraintTop_toBottomOf="@id/tv_temperature_day_2" />
@@ -286,32 +293,86 @@
                 android:fontFamily="@font/wallpoet"
                 android:text="@string/loading"
                 android:textColor="@color/yellow"
-                app:layout_constraintStart_toEndOf="@+id/tv_day_3_name"
-                app:layout_constraintTop_toTopOf="@+id/tv_day_3_name" />
+                app:layout_constraintBottom_toTopOf="@+id/tv_day_3_name"
+                app:layout_constraintEnd_toEndOf="@+id/tv_day_3_name" />
 
             <TextView
                 android:id="@+id/dat2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text="@string/loading"
                 android:fontFamily="@font/wallpoet"
+                android:text="@string/loading"
                 android:textColor="@color/yellow"
-                app:layout_constraintStart_toEndOf="@+id/tv_day_2_name"
-                app:layout_constraintTop_toTopOf="@+id/tv_day_2_name" />
+                app:layout_constraintBottom_toTopOf="@+id/tv_day_2_name"
+                app:layout_constraintEnd_toEndOf="@+id/tv_day_2_name" />
 
             <TextView
                 android:id="@+id/dat1"
                 android:layout_width="68dp"
                 android:layout_height="16dp"
                 android:layout_margin="4dp"
-                android:text="@string/loading"
                 android:fontFamily="@font/wallpoet"
+                android:text="@string/loading"
                 android:textColor="@color/yellow"
-                app:layout_constraintStart_toEndOf="@+id/tv_day_1_name"
-                app:layout_constraintTop_toTopOf="@+id/tv_day_1_name" />
+                app:layout_constraintBottom_toTopOf="@+id/tv_day_1_name"
+                app:layout_constraintEnd_toEndOf="@+id/tv_day_1_name" />
 
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_search"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="4dp"
+        android:backgroundTint="@color/black_light"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="4dp"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_baseline_search_24"
+                        app:layout_constraintBottom_toBottomOf="@id/cl_2"
+                        app:layout_constraintStart_toStartOf="@id/cl_2"
+                        app:layout_constraintTop_toTopOf="@id/cl_2" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:hint="Search..."
+                        android:layout_marginStart="4dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
