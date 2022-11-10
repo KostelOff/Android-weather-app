@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_marginStart_4">4dp</dimen>
+    <dimen name="layout_marginTop_8">8dp</dimen>
+    <dimen name="layout_marginEnd_4">4dp</dimen>
+    <dimen name="layout_marginBottom_8">8dp</dimen>
+    <dimen name="cardCornerRadius_8">8dp</dimen>
+    <dimen name="cardElevation_0">0dp</dimen>
+    <dimen name="padding">4dp</dimen>
+    <dimen name="textSize_32">32sp</dimen>
+    <dimen name="layout_marginEnd_8">8dp</dimen>
+    <dimen name="textSize_56">56sp</dimen>
+    <dimen name="layout_marginStart_8">8dp</dimen>
+    <dimen name="textSize_24">24sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_36">36sp</dimen>
+    <dimen name="layout_margin_8">8dp</dimen>
+    <dimen name="layout_marginEnd_12">12dp</dimen>
+    <dimen name="layout_margin_4">4dp</dimen>
+    <dimen name="layout_height_cardview">56dp</dimen>
+    <dimen name="layout_width_and_height_48">48dp</dimen>
+</resources>

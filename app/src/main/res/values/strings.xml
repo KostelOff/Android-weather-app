@@ -2,4 +2,7 @@
     <string name="app_name">weatherApp</string>
     <string name="loading">loading...</string>
     <string name="moscow">MOSCOW</string>
+    <string name="description">description</string>
+    <string name="speed_wind">Speed wind</string>
+    <string name="Search">Search...</string>
 </resources>
